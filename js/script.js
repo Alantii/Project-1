@@ -26,16 +26,16 @@ var quotes = [
    source:"Lee Harvey Oswald"
 },
 
-  {quote: "",
-source:"value2"
+  {quote: "With Great Power comes great responsibility.",
+  source:"Ben Parker"
 },
 
-  {quote: "value1",
-source:"value2"
+  {quote: "Sometimes life is to uncertain to have regrets.",
+  source:"Goku"
 },
 
-  {quote: "value1",
-source:"value2"
+  {quote: "Its not over when you lose its over when you quit",
+source:"Vegeta"
 },
 
 
@@ -53,6 +53,11 @@ source:"value2"
      `quotes` array.
 ***/
 
+function getRandomQuote(array) {
+  var randomNumber = 0;''
+  randomNumber = Math.floor(Math.random() * quotes.length);
+    return quotes[randomNumber]; 
+}
 
 
 
@@ -65,7 +70,11 @@ source:"value2"
      they are added to the HTML string.
    - set the `innerHTML` of the `quote-box` div to the HTML string. 
 ***/
-
+function printQuote() {
+  var randomQuote = getRandomQuote(quotes);
+  HTML = '';
+  HTML += '<p class="quote">' + randomQuote.quote + '</p>';
+  HTML += '<p class="author">' + randomQuote.author;
 
 
 
