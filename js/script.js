@@ -16,10 +16,37 @@ FSJS project 1 - A Random Quote Generator
       quote object.
 ***/
 
+var quotes = [
+
+  {quote: "Anyone who has never made a mistake has never tried anything new.",
+  source:"Albert Einstein"
+},
+
+  {quote: "You miss one hundred percent of the shots you dont take",
+   source:"Lee Harvey Oswald"
+},
+
+  {quote: "",
+source:"value2"
+},
+
+  {quote: "value1",
+source:"value2"
+},
+
+  {quote: "value1",
+source:"value2"
+},
+
+
+]
+
+ 
 
 
 
-/***
+
+/**
   Create the `getRandomQuote` function to:
    - generate a random number 
    - use the random number to `return` a random quote object from the 
