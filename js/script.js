@@ -74,10 +74,12 @@ function printQuote() {
   var randomQuote = getRandomQuote(quotes);
   HTML = '';
   HTML += '<p class="quote">' + randomQuote.quote + '</p>';
-  HTML += '<p class="author">' + randomQuote.author;
+  HTML += '<p class="source">' + randomQuote.author;
 
 
+}
 
+printQuote();
 /***
   When the "Show another quote" button is clicked, the event listener 
   below will be triggered, and it will call, or "invoke", the `printQuote` 
@@ -88,5 +90,4 @@ function printQuote() {
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
-// comments 
-// Remember to delete the comments that came with this file, and replace them with your own code comments.
+// Theogallon
