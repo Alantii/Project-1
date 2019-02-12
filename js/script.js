@@ -35,7 +35,7 @@ var quotes = [
 },
 
   {quote: "Its not over when you lose its over when you quit",
-source:"Vegeta"
+  source:"Vegeta"
 },
 
 
@@ -54,7 +54,7 @@ source:"Vegeta"
 ***/
 
 function getRandomQuote(array) {
-  var randomNumber = 0;''
+  var randomNumber = 1;''
   randomNumber = Math.floor(Math.random() * quotes.length);
     return quotes[randomNumber]; 
 }
@@ -74,12 +74,13 @@ function printQuote() {
   var randomQuote = getRandomQuote(quotes);
   HTML = '';
   HTML += '<p class="quote">' + randomQuote.quote + '</p>';
-  HTML += '<p class="source">' + randomQuote.author;
+  HTML += '<p class="source">' + randomQuote.source;
 
-
+  document.getElementById("quote-box").innerHTML = HTML;
 }
 
 printQuote();
+
 /***
   When the "Show another quote" button is clicked, the event listener 
   below will be triggered, and it will call, or "invoke", the `printQuote` 
@@ -90,4 +91,3 @@ printQuote();
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
-// Theogallon
